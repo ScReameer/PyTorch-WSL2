@@ -107,7 +107,7 @@ conda create -n DL python=3.11.9
 
 conda activate DL
 
-python -m pip install torch torch-tensorrt tensorrt --extra-index-url https://download.pytorch.org/whl/cu124
+python -m pip install torch torch-tensorrt --extra-index-url https://download.pytorch.org/whl/cu124
 
 pip install "nvidia-modelopt[all]" --extra-index-url https://pypi.nvidia.com
 ```
@@ -115,13 +115,6 @@ pip install "nvidia-modelopt[all]" --extra-index-url https://pypi.nvidia.com
 
 Check dependencies:
 ```bash
-pip check
-```
-If you have next error:
-![alt text](./imgs/image-2.png)
-Fix dependencies:
-```bash
-pip install tensorrt-cu12-bindings==10.1.0 tensorrt-cu12-libs==10.1.0
 pip check
 ```
 ![alt text](./imgs/image_3.png)
